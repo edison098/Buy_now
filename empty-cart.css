@@ -1,0 +1,252 @@
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+  }
+
+  /* Header */
+  .header {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Navigation */
+  nav {
+    background: #1B2B56;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-btn {
+    background: #1B2B56;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+  .menu-btn-nave {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-btn-nave li {
+    margin: 0 15px;
+  }
+
+  .menu-btn-nave a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Main layout */
+  main {
+    display: flex;
+    min-height: calc(100vh - 120px);
+  }
+
+  .sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar li {
+    margin: 15px 0;
+  }
+
+  .sidebar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .cart-content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  /* Sidebar hidden state */
+  main.sidebar-visible .cart-content {
+    margin-left: 250px;
+  }
+
+.cart-m{
+    margin: -10px;
+
+}
+ 
+
+  .search-bar {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .search-bar input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-left: 400px;
+  }
+
+  
+
+  /* Main content */
+  .container {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .cart-icon {
+    width: 120px;
+    height: 120px;
+    background:#1B2B56;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(17, 17, 17);
+  }
+
+  .empty-text {
+    color: #1B2B56;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    background:gainsboro;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: rgb(15, 15, 15);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    background:#1B2B56;
+  }
+
+/* Cart Items Styles */
+.cart-items {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.cart-items h2 {
+  color: #1B2B56;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cart-item-details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cart-item img {
+  margin-right: 20px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.item-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.item-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-controls button {
+  background: #1B2B56;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 30px;
+}
+
+.item-controls button:hover {
+  background: #0f1a3d;
+}
+
+.cart-total {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 30px;
+  border: 2px solid #1B2B56;
+}
+
+.cart-total h3 {
+  color: #1B2B56;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+
+.checkout-btn {
+  background: #1B2B56 !important;
+  color: white !important;
+  border: none !important;
+  padding: 15px 30px !important;
+  border-radius: 25px !important;
+  font-size: 18px !important;
+  cursor: pointer !important;
+  transition: 0.3s !important;
+}
+
+.checkout-btn:hover {
+  background: #0f1a3d !important;
+  transform: scale(1.05);
+}

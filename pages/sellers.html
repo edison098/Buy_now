@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMERCARE</title>
+    <link rel="stylesheet" href="../home-style1.css">
+    <link rel="stylesheet" href="../sellers-style2.css">
+</head>
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="left-links">
+            <a href="about.html">About Us</a>
+            <a href="register.html">My Account</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="order-tracking.html">Order Tracking</a>
+        </div>
+
+        <div class="right-info">
+            <span>📦 100% Secure delivery</span>
+            <span>📞 Call Us: +250798921621</span>
+
+            <select id="language">
+                <option>English</option>
+                <option>French</option>
+            </select>
+
+            <select id="currency">
+                <option>USD</option>
+                <option>RWF</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="main-header">
+            <h1 class="logo">🛒<span>NOW</span></h1>
+            <input type="text" placeholder="Search for products...">
+            <div class="cart"><a href="empty-cart.html"> 0 RWF</a></div>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <button id="menubtn" class="menu-btn">☰ ALL CATEGORIES</button>
+        <ul class="menu-btn-nave">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="sellers.html">SELLERS</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="grocery.html">GROCERY FOOD</a></li>
+            <li><a href="household.html">HEALTH AND HOUSEHOLD</a></li>
+            <li><a href="kitchen.html">HOME AND KITCHEN</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <aside id="sidebar" class="sidebar" style="display:none;">
+            <ul>
+                <li><a href="kitchen.html">🏠Home & Kitchen</a></li>
+                <li><a href="grocery.html">🍗Grocery Food</a></li>
+                <li><a href="household.html">🧑‍⚕️Health and Household</a></li>
+                <li><a href="beverage.html">🍵Beverages</a></li>
+                <li><a href="backery.html">🍞Bakery & Breads</a></li>
+                <li><a href="biscuit.html">🍬Biscuits & Snacks</a></li>
+                <li><a href="accessories.html">🪙Jewelry Accessories</a></li>
+                <li><a href="electronics.html">📺Electronics</a></li>
+            </ul>
+        </aside>
+
+        <div class="seller-page-content">
+            <section class="seller-banner">
+                <div class="banner-left">
+                    <span>Your One-stop Holiday</span>
+                    <h1>Shopping Destination</h1>
+                    <p>Find trusted sellers, discover local stores, and shop the best offers in one place. Explore featured sellers and start buying now.</p>
+                    <button onclick="goToProducts()">Start Shopping</button>
+                </div>
+                <div class="banner-right">
+                    <div class="banner-pill top-pill">Trusted Sellers</div>
+                    <div class="banner-image"></div>
+                    <div class="banner-pill bottom-pill">Fast delivery</div>
+                </div>
+            </section>
+
+            <section class="seller-controls">
+                <div>
+                    <h2>Popular Sellers</h2>
+                    <p>Browse merchant profiles and follow your favorites.</p>
+                </div>
+                <div class="search-group">
+                    <input id="sellerSearch" type="text" placeholder="Search sellers...">
+                </div>
+            </section>
+
+            <section class="seller-grid" id="sellerGrid">
+                <article class="seller-card" data-name="BAOBA MEDICAL LTD">
+                    <div class="seller-card-top">
+                        <h3>BAOBA MEDICAL LTD</h3>
+                        <span>Medical supplies, pharmacy</span>
+                    </div>
+                    <div class="seller-badge">Verified</div>
+                    <div class="seller-tags">
+                        <span class="tag">Medical</span>
+                        <span class="tag">Fast delivery</span>
+                    </div>
+                    <div class="seller-actions">
+                        <button>Follow</button>
+                        <button class="secondary">View</button>
+                    </div>
+                </article>
+                <article class="seller-card" data-name="ANIMA LTD">
+                    <div class="seller-card-top">
+                        <h3>ANIMA LTD</h3>
+                        <span>Groceries, general store</span>
+                    </div>
+                    <div class="seller-badge">Top</div>
+                    <div class="seller-tags">
+                        <span class="tag">Groceries</span>
+                        <span class="tag">New</span>
+                    </div>
+                    <div class="seller-actions">
+                        <button>Follow</button>
+                        <button class="secondary">View</button>
+                    </div>
+                </article>
+                <article class="seller-card" data-name="BDA Joselyne">
+                    <div class="seller-card-top">
+                        <h3>BDA Joselyne</h3>
+                        <span>Beauty, fashion goods</span>
+                    </div>
+                    <div class="seller-badge">Featured</div>
+                    <div class="seller-tags">
+                        <span class="tag">Fashion</span>
+                        <span class="tag">Discounts</span>
+                    </div>
+                    <div class="seller-actions">
+                        <button>Follow</button>
+                        <button class="secondary">View</button>
+                    </div>
+                </article>
+                <article class="seller-card" data-name="Charlotte shop">
+                    <div class="seller-card-top">
+                        <h3>Charlotte shop</h3>
+                        <span>Household products</span>
+                    </div>
+                    <div class="seller-badge">Local</div>
+                    <div class="seller-tags">
+                        <span class="tag">Home</span>
+                        <span class="tag">Kitchen</span>
+                    </div>
+                    <div class="seller-actions">
+                        <button>Follow</button>
+                        <button class="secondary">View</button>
+                    </div>
+                </article>
+                <article class="seller-card" data-name="Mahama Boutique">
+                    <div class="seller-card-top">
+                        <h3>Mahama Boutique</h3>
+                        <span>Fashion and accessories</span>
+                    </div>
+                    <div class="seller-badge">Popular</div>
+                    <div class="seller-tags">
+                        <span class="tag">Style</span>
+                        <span class="tag">Accessories</span>
+                    </div>
+                    <div class="seller-actions">
+                        <button>Follow</button>
+                        <button class="secondary">View</button>
+                    </div>
+                </article>
+                <article class="seller-card" data-name="Consultancy in Business Development Advisor">
+                    <div class="seller-card-top">
+                        <h3>Consultancy in Business Development Advisor</h3>
+                        <span>Professional services</span>
+                    </div>
+                    <div class="seller-badge">Expert</div>
+                    <div class="seller-tags">
+                        <span class="tag">Business</span>
+                        <span class="tag">Consulting</span>
+                    </div>
+                    <div class="seller-actions">
+                        <button>Follow</button>
+                        <button class="secondary">View</button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="seller-collection">
+                <div class="section-head">
+                    <div>
+                        <h2>More Marketplace Sellers</h2>
+                        <p>Discover additional sellers and local stores in our marketplace.</p>
+                    </div>
+                </div>
+                <div class="marketplace-grid">
+                    <article class="marketplace-card">
+                        <div class="card-image">TSAS Gateway and Travels Ltd</div>
+                        <div class="card-body">
+                            <h4>Travel & Logistics</h4>
+                            <p>Reliable travel services and packages across the region.</p>
+                            <div class="card-meta">
+                                <span class="card-status">Active</span>
+                                <span class="more-icon">⋯</span>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                    </article>
+                    <article class="marketplace-card">
+                        <div class="card-image">JANVIER GASABIRA</div>
+                        <div class="card-body">
+                            <h4>Food & Retail</h4>
+                            <p>Quality local foods and retail products for every customer.</p>
+                            <div class="card-meta">
+                                <span class="card-status">New</span>
+                                <span class="more-icon">⋯</span>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                    </article>
+                    <article class="marketplace-card">
+                        <div class="card-image">Samson NIYOMUCAMANZA</div>
+                        <div class="card-body">
+                            <h4>Electronics</h4>
+                            <p>Electronics and accessories with fast delivery support.</p>
+                            <div class="card-meta">
+                                <span class="card-status">Popular</span>
+                                <span class="more-icon">⋯</span>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                    </article>
+                    <article class="marketplace-card">
+                        <div class="card-image">NICODEME KANYANDUGA</div>
+                        <div class="card-body">
+                            <h4>Tools & Supplies</h4>
+                            <p>Professional household and industrial supplies.</p>
+                            <div class="card-meta">
+                                <span class="card-status">Verified</span>
+                                <span class="more-icon">⋯</span>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                    </article>
+                    <article class="marketplace-card">
+                        <div class="card-image">Kayitesi Alien</div>
+                        <div class="card-body">
+                            <h4>Creative Goods</h4>
+                            <p>Unique products and creative items delivered locally.</p>
+                            <div class="card-meta">
+                                <span class="card-status">Local</span>
+                                <span class="more-icon">⋯</span>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                    </article>
+                    <article class="marketplace-card">
+                        <div class="card-image">Pambyigirimana</div>
+                        <div class="card-body">
+                            <h4>Fashion Boutique</h4>
+                            <p>Modern fashion finds and personalized shopping experiences.</p>
+                            <div class="card-meta">
+                                <span class="card-status">Featured</span>
+                                <span class="more-icon">⋯</span>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter">
+        <div class="newsletter-text">
+            <h2>Join our newsletter and get updates on promotions and coupons.</h2>
+            <p>Be the first to access special offers, limited-time coupons, and member-only promotions.</p>
+        </div>
+
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button onclick="subscribe()">Subscribe</button>
+        </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="features">
+        <div>📌 Everyday fresh products</div>
+        <div>🚚 Free delivery for order over $70</div>
+        <div>💰 Daily Mega Discounts</div>
+        <div>🏆 Best price on the market</div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-links">
+
+        <div>
+            <h4>GET TO KNOW US</h4>
+            <p>About</p>
+            <p>Contact Us</p>
+            <p>Shop</p>
+            <p>Blog</p>
+        </div>
+
+        <div>
+            <h4>GROCERY AND FOOD</h4>
+            <p>Fruits</p>
+            <p>Vegetables</p>
+            <p>Drinks</p>
+        </div>
+
+        <div>
+            <h4>HEALTH & HOUSEHOLD</h4>
+            <p>Soap</p>
+            <p>Medicine</p>
+        </div>
+
+        <div>
+            <h4>HOME & KITCHEN</h4>
+            <p>Utensils</p>
+            <p>Storage</p>
+        </div>
+
+        <div>
+            <h4>FASHION</h4>
+            <p>Clothes</p>
+            <p>Shoes</p>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <div class="contact">
+            📞 +250 79
+        </div>
+
+        <div class="copyright">
+            © 2025 🛒NOW. All Rights Reserved
+        </div>
+    </div>
+
+</footer>
+  
+
+    <script src="../header.js"></script>
+    <script>
+        document.getElementById('sellerSearch')?.addEventListener('input', function () {
+            const value = this.value.toLowerCase();
+            document.querySelectorAll('.seller-card').forEach(card => {
+                const name = card.dataset.name.toLowerCase();
+                card.style.display = name.includes(value) ? 'flex' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RwandaMart Login</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-links">
+            <a href="about.html">About Us</a>
+            <a href="login.html">My account</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="order-tracking.html">Order Tracking</a>
+        </div>
+        <div class="top-meta">
+            <span>📦 100% Secure delivery without exceeding the courier</span>
+            <span>Need help? Call Us: <strong>+250 791 945 679</strong></span>
+            <div class="top-selects">
+                <select aria-label="Language">
+                    <option>English</option>
+                    <option>French</option>
+                </select>
+                <select aria-label="Currency">
+                    <option>USD</option>
+                    <option>RWF</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="brand">
+            <h1 class="logo">🛒<span>NOW</span></h1>
+        </div>
+        <div class="search-wrap">
+            <input type="search" placeholder="Search for products..." aria-label="Search" />
+            <button>Search</button>
+        </div>
+        <div class="header-actions">
+            <button class="icon-btn">🛒</button>
+            <button class="icon-btn">👤</button>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <button id="categoryToggle" class="category-btn">☰ ALL CATEGORIES</button>
+        <ul class="nav-links">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="sellers.html">SELLERS</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="grocery.html">GROCERY AND GOURMET FOOD</a></li>
+            <li><a href="household.html">HEALTH AND HOUSEHOLD</a></li>
+            <li><a href="kitchen.html">HOME AND KITCHEN</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-head">
+        <div class="breadcrumb">Home / My Account</div>
+        <h1>Login</h1>
+        <p>Access your account, manage orders, and keep track of your wishlist.</p>
+    </section>
+
+    <main class="account-page">
+        <section class="auth-card">
+            <div class="auth-tabs">
+                <button class="tab active" data-tab="login">LOGIN</button>
+                <button class="tab" data-tab="register">REGISTER</button>
+            </div>
+            <div class="tab-panels">
+                <div class="panel active" id="login">
+                    <form class="auth-form" onsubmit="handleLogin(event)">
+                        <label>Email address *</label>
+                        <input type="email" placeholder="you@example.com" required>
+
+                        <label>Password *</label>
+                        <input type="password" placeholder="Enter your password" required>
+
+                        <div class="form-row">
+                            <label class="checkbox-label"><input type="checkbox"> Remember me</label>
+                            <a href="#">Lost your password?</a>
+                        </div>
+
+                        <button type="submit" class="primary-btn">Log in</button>
+                    </form>
+                </div>
+                <div class="panel" id="register">
+                    <form class="auth-form" onsubmit="handleRegister(event)">
+                        <label>Email address *</label>
+                        <input type="email" placeholder="you@example.com" required>
+
+                        <label>Password *</label>
+                        <input type="password" placeholder="Choose a password" required>
+
+                        <div class="role-row">
+                            <label><input type="radio" name="role" value="customer" checked> I am a customer</label>
+                            <label><input type="radio" name="role" value="vendor"> I am a vendor</label>
+                        </div>
+
+                        <p class="privacy-note">
+                            Your personal data will be used to support your experience throughout this website.
+                        </p>
+
+                        <button type="submit" class="primary-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <aside class="promo-panel">
+            <div class="promo-card">
+                <div class="promo-title">Join our marketplace</div>
+                <p>Fast login and easy access to wholesale products from local and international sellers.</p>
+                <ul>
+                    <li>Secure checkout processing</li>
+                    <li>Order tracking and wishlist</li>
+                    <li>Exclusive business offers</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <div>
+                <span>Join our newsletter</span>
+                <h2>Get updates on promotions and coupons.</h2>
+            </div>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" aria-label="Newsletter email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h4>GET TO KNOW US</h4>
+                <a href="#">About RwandaMart</a>
+                <a href="#">Contact us</a>
+                <a href="#">Blog</a>
+                <a href="#">Privacy policy</a>
+            </div>
+            <div>
+                <h4>GROCERY AND GOURMET FOOD</h4>
+                <a href="#">Fruits & Vegetables</a>
+                <a href="#">Snacks</a>
+                <a href="#">Beverages</a>
+            </div>
+            <div>
+                <h4>HEALTH AND HOUSEHOLD</h4>
+                <a href="#">Personal care</a>
+                <a href="#">Household items</a>
+                <a href="#">Wellness</a>
+            </div>
+            <div>
+                <h4>HOME AND KITCHEN</h4>
+                <a href="#">Kitchen tools</a>
+                <a href="#">Home appliances</a>
+                <a href="#">Decor</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 RwandaMart. All rights reserved.</span>
+            <span>Contact: +250 79 194 5679</span>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home & Kitchen - CUSTOMERCARE</title>
+    <link rel="stylesheet" href="../home-style1.css">
+    <link rel="stylesheet" href="../shop.css">    <link rel="stylesheet" href="../kitchen.css"></head>
+<body>
+    <div class="top-header">
+        <div class="left-links">
+            <a href="about.html">About Us</a>
+            <a href="register.html">My Account</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="order-tracking.html">Order Tracking</a>
+        </div>
+        <div class="right-info">
+            <span>📦 100% Secure delivery</span>
+            <span>📞 Call Us: +250798921621</span>
+            <select id="language">
+                <option>English</option>
+                <option>French</option>
+            </select>
+            <select id="currency">
+                <option>USD</option>
+                <option>RWF</option>
+            </select>
+        </div>
+    </div>
+
+    <header>
+        <div class="main-header">
+            <h1 class="logo">🛒<span>NOW</span></h1>
+            <input type="text" placeholder="Search for products...">
+            <div class="cart"><a href="empty-cart.html">🛒 0 RWF</a></div>
+        </div>
+    </header>
+
+    <nav>
+        <button id="menubtn" class="menu-btn">☰ ALL CATEGORIES</button>
+        <ul class="menu-btn-nave">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="sellers.html">SELLERS</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="grocery.html">GROCERY FOOD</a></li>
+            <li><a href="household.html">HEALTH AND HOUSEHOLD</a></li>
+            <li><a href="kitchen.html">HOME AND KITCHEN</a></li>
+        </ul>
+    </nav>
+
+    <section class="shop-banner">
+        <div class="banner-content">
+            <span class="banner-tag">SHOPPING DESTINATION</span>
+            <h1>Your one-stop holiday shopping destination</h1>
+            <p>Explore fresh groceries, electronics, household essentials and beautiful deals — all in one place.</p>
+            <button id="shopBannerBtn">Start Shopping</button>
+        </div>
+        <div class="banner-image">
+            <img src="images/Poster design.jpg" alt="Shopping destination banner">
+        </div>
+    </section>
+    <section class="kitchen-page">
+        <div class="category-section">
+            <div class="categories-header">
+                <h2>Shop by category</h2>
+                <span>Show 12 categories</span>
+            </div>
+            <div class="category-grid">
+                <button class="category-card active" data-cat="all">
+                    <div class="category-card-icon">🏠</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Accommodation</span>
+                        <small>(1)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="baskets">
+                    <div class="category-card-icon">🧺</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Baskets</span>
+                        <small>(17)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="bedroom">
+                    <div class="category-card-icon">🛏️</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Bedroom</span>
+                        <small>(13)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="dining">
+                    <div class="category-card-icon">🍽️</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Dining & Tableware</span>
+                        <small>(39)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="furniture">
+                    <div class="category-card-icon">🪑</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Furniture</span>
+                        <small>(68)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="household">
+                    <div class="category-card-icon">🏠</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Household Items</span>
+                        <small>(32)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="kitchen">
+                    <div class="category-card-icon">🍳</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Kitchen</span>
+                        <small>(11)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="outdoor">
+                    <div class="category-card-icon">🌿</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Outdoor & Garden</span>
+                        <small>(37)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="pet">
+                    <div class="category-card-icon">🐾</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Pet Accessories</span>
+                        <small>(4)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="artwork">
+                    <div class="category-card-icon">🖼️</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Pictures & Artwork</span>
+                        <small>(69)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="pillows">
+                    <div class="category-card-icon">🛋️</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Pillows & Cushions</span>
+                        <small>(14)</small>
+                    </div>
+                </button>
+                <button class="category-card" data-cat="kitchen">
+                    <div class="category-card-icon">🍽️</div>
+                    <div class="category-card-details">
+                        <span class="category-card-title">Kitchen Essentials</span>
+                        <small>(47)</small>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="products-section">
+            <div class="products-header">
+                <h2>Featured kitchen & home products</h2>
+                <span id="productCount">12 items found</span>
+            </div>
+            <div class="products-toolbar">
+                <input id="searchProducts" type="search" placeholder="Search products...">
+                <select id="sortProducts">
+                    <option value="featured">Featured</option>
+                    <option value="priceLow">Price: Low to High</option>
+                    <option value="priceHigh">Price: High to Low</option>
+                </select>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <article class="product-card" data-category="kitchen" data-name="lucid food processor">
+                    <img src="images/usb1.jpg" alt="Lucid Food Processor BJ-938P">
+                    <h3>LUCID FOOD PROCESSOR BJ-938P</h3>
+                    <div class="product-meta">
+                        <p class="price">176,000 RWF</p>
+                        <p class="status">In Stock</p>
+                        <small>SKU: FUT-URE-HOR-IZO-NTE-BJ-938P</small>
+                    </div>
+                    <button>Add to Cart</button>
+                </article>
+                <article class="product-card" data-category="household" data-name="toilet shelf organizer">
+                    <img src="images/charger1.jpg" alt="Toilet Shelf Free Standing Bathroom Organizer">
+                    <h3>Toilet Shelf Free Standing Bathroom Organizer</h3>
+                    <div class="product-meta">
+                        <p class="price">450,000 RWF</p>
+                        <p class="status">In Stock</p>
+                        <small>SKU: homem-bare</small>
+                    </div>
+                    <button>Add to Cart</button>
+                </article>
+                <article class="product-card" data-category="household" data-name="hooded bathrobe">
+                    <img src="images/honey3.jpg" alt="Hooded Bathrobe 100% Cotton Terry Bathrobes">
+                    <h3>Hooded Bathrobe 100% Cotton Terry Bathrobes</h3>
+                    <div class="product-meta">
+                        <p class="price">30,000 RWF</p>
+                        <p class="status">In Stock</p>
+                        <small>SKU: hame-tu2</small>
+                    </div>
+                    <button>Add to Cart</button>
+                </article>
+                <article class="product-card" data-category="kitchen" data-name="skai hot chili sauce">
+                    <img src="images/honey2.jpg" alt="Skai Hot Chili Sauce">
+                    <h3>Skai Hot Chili Sauce</h3>
+                    <div class="product-meta">
+                        <p class="price">750 RWF</p>
+                        <p class="status">Out of Stock</p>
+                        <small>SKU: skai-volcano-heat-chili-sauce</small>
+                    </div>
+                    <button>Add to Cart</button>
+                </article>
+                <article class="product-card" data-category="kitchen" data-name="skai red hot chili sauce">
+                    <img src="images/honey2.jpg" alt="Skai Red Hot Chili Sauce">
+                    <h3>Skai Red Hot Chili Sauce</h3>
+                    <div class="product-meta">
+                        <p class="price">1,500 RWF</p>
+                        <p class="status">In Stock</p>
+                        <small>SKU: SKA-HOT-CHIL-SAUCE-BIG-BOT</small>
+                    </div>
+                    <button>Add to Cart</button>
+                </article>
+                <article class="product-card" data-category="outdoor" data-name="kitchen gadget set">
+                    <img src="images/ports1.jpg" alt="Kitchen Gadget Set">
+                    <h3>Premium Kitchen Gadget Set</h3>
+                    <div class="product-meta">
+                        <p class="price">56,000 RWF</p>
+                        <p class="status">In Stock</p>
+                        <small>SKU: KIT-GAD-SET-01</small>
+                    </div>
+                    <button>Add to Cart</button>
+                </article>
+                <article class="product-card" data-category="furniture" data-name="wooden dining table">
+                    <img src="images/wares1.jpg" alt="Wooden Dining Table">
+                    <h3>Wooden Dining Table</h3>
+                    <div class="product-meta">
+                        <p class="price">130,000 RWF</p>
+                        <p class="status">In Stock</p>
+                        <small>SKU: FUR-TBL-07</small>
+                    </div>
+                    <button>Add to Cart</button>
+                </article>
+                <article class="product-card" data-category="artwork" data-name="canvas wall art">
+                    <img src="images/ports1.jpg" alt="Canvas Wall Art">
+                    <h3>Canvas Wall Art</h3>
+                    <div class="product-meta">
+                        <p class="price">20,000 RWF</p>
+                        <p class="status">In Stock</p>
+                        <small>SKU: ART-CAN-22</small>
+                    </div>
+                    <button>Add to Cart</button>
+                </article>
+            </div>
+        </div>
+    </section>
+    <main>
+        <aside id="sidebar" class="sidebar" style="display:none;">
+            <ul>
+                <li><a href="kitchen.html">🏠Home & Kitchen</a></li>
+                <li><a href="grocery.html">🍗Grocery Food</a></li>
+                <li><a href="household.html">🧑‍⚕️Health and Household</a></li>
+                <li><a href="beverage.html">🍵Beverages</a></li>
+                <li><a href="backery.html">🍞Bakery & Breads</a></li>
+                <li><a href="biscuit.html">🍬Biscuits & Snacks</a></li>
+                <li><a href="accessories.html">🪙Jewelry Accessories</a></li>
+                <li><a href="electronics.html">📺Electronics</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="newsletter">
+            <div class="newsletter-text">
+                <h2>Join our newsletter and get updates on promotions and coupons.</h2>
+                <p>Be the first to access special offers, limited-time coupons, and member-only promotions.</p>
+            </div>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="features">
+            <div>📌 Everyday fresh products</div>
+            <div>🚚 Free delivery for order over $70</div>
+            <div>💰 Daily Mega Discounts</div>
+            <div>🏆 Best price on the market</div>
+        </div>
+        <div class="footer-bottom">
+            <div class="contact">📞 +250 79</div>
+            <div class="copyright">© 2025 🛒NOW. All Rights Reserved</div>
+        </div>
+    </footer>
+
+    <script src="../kitchen.js"></script>
+    <script src="../header.js"></script>
+</body>
+</html>
