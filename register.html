@@ -10,7 +10,7 @@
     <div class="top-bar">
         <div class="top-links">
             <a href="about.html">About Us</a>
-            <a href="login.html">My account</a>
+            <a href="register.html">My account</a>
             <a href="wishlist.html">Wishlist</a>
             <a href="order-tracking.html">Order Tracking</a>
         </div>
@@ -38,9 +38,23 @@
             <input type="search" placeholder="Search for products..." aria-label="Search" />
             <button>Search</button>
         </div>
-        <div class="header-actions">
-            <button class="icon-btn">🛒</button>
-            <button class="icon-btn">👤</button>
+        <div class="header-buttons">
+            <div class="header-login button-item bordered">
+                <a href="register.html" aria-label="My account">
+                    <span class="button-icon user-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+                    </span>
+                </a>
+            </div>
+            <div class="header-cart button-item bordered">
+                <a href="empty-cart.html" aria-label="View cart">
+                    <span class="cart-price">0 RWF</span>
+                    <span class="button-icon cart-icon-button" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M6 8h15l-1.5 9h-12L6 8Z"/><path d="M6 8 5 4H2"/><path d="M9 8a3 3 0 0 1 6 0"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+                        <span class="cart-count-icon">0</span>
+                    </span>
+                </a>
+            </div>
         </div>
     </header>
 
