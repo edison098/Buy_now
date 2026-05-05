@@ -11,10 +11,13 @@ body {
 
 /* HEADER */
 .top-bar {
-    background: #eee;
-    padding: 5px;
+    display: block;
+    width: 100%;
+    background-color: #1B2B56;
+    color: white;
+    padding: 5px 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .main-header {
