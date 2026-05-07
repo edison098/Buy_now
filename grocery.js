@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateCount() {
         const visible = products.filter(card => card.style.display !== 'none');
-        productCount.textContent = `Showing ${visible.length} products`;
+        productCount.textContent = Showing +visible.length+ products;
     }
 
     function applyFilter(category) {
@@ -35,28 +35,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     updateCount();
-
-    document.querySelectorAll('.product-card button').forEach(button => {
-        button.addEventListener('click', () => {
-            const card = button.closest('.product-card');
-            const title = card.querySelector('h3').textContent;
-            const price = card.querySelector('.price').textContent;
-            const img = card.querySelector('img').src;
-            addToCart(title, price, img);
-        });
-    });
 });
-
-function addToCart(productName, price, imageSrc) {
-    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
-    const priceValue = parseInt(price.replace(/[^
-0-9]/g, ''), 10) || 0;
-    const existing = cart.find(item => item.name === productName);
-    if (existing) {
-        existing.quantity += 1;
-    } else {
-        cart.push({ name: productName, price: priceValue, image: imageSrc, quantity: 1 });
-    }
-    localStorage.setItem('cart', JSON.stringify(cart));
-    window.location.href = 'empty-cart.html';
-}

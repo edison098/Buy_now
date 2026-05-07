@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<head>    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About RwandaMart - CUSTOMERCARE</title>
+    <title>About Buy Now - CUSTOMERCARE</title>
     <link rel="stylesheet" href="home-style1.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
@@ -22,36 +22,19 @@
             <a href="order-tracking.html">Order Tracking</a>
         </div>
 
-<div class="column column-right">
+        <div class="right-info">
+            <span>📦 100% Secure delivery</span>
+            <span>📞 Call Us: +250798921621</span>
 
-                <div class="topbar-notice">
-                    <i class="klbth-icon-secure"></i>
-                    <span>100% Secure delivery without contacting the courier</span>
-                </div>
+            <select id="language">
+                <option>English</option>
+                <option>French</option>
+            </select>
 
-                <div class="text-content">
-                    Need help? Call Us: <a href="tel:250791945679"><strong style="color: #2bbef9">+ 250 791 945 679</strong></a>
-                </div>
-
-                <div class="header-switchers">
-                    <nav class="store-language site-menu horizontal">
-                        <ul id="menu-top-right-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1832"><a href="#">English</a>
-<ul class="sub-menu">
-    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1838"><a href="#">English</a></li>
-    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1833"><a href="#">Spanish</a></li>
-    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1834"><a href="#">German</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1835"><a href="#">USD</a>
-<ul class="sub-menu">
-    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1839"><a href="#">USD</a></li>
-    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1836"><a href="#">INR</a></li>
-    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1837"><a href="#">GBP</a></li>
-</ul>
-</li>
-</ul>                        </nav><!-- site-menu -->
-                </div><!-- header-switchers -->
-
+            <select id="currency">
+                <option>USD</option>
+                <option>RWF</option>
+            </select>
         </div>
     </div>
 
@@ -59,7 +42,7 @@
     <header>
         <div class="main-header">
             <h1 class="logo">🛒<span>NOW</span></h1>
-            <input type="text" placeholder="Search for products...">
+            <input class="search-input" type="search" placeholder="Search for products...">
             <div class="header-buttons">
                 <div class="header-login button-item bordered">
                     <a href="register.html" aria-label="My account">
@@ -106,26 +89,26 @@
         <section class="about-intro">
             <h2>Connects Directly with the Best of Rwandan Sellers</h2>
             <p>We have created an extraordinary collection of the highest quality products and services from all over the Land of a Thousand Hills, with new and exciting ideas for you to discover.</p>
-            <p>RwandaMart offers local buyers a full selection of diverse products and services from local sellers, manufacturers, resellers and importers.</p>
-            <p>RwandaMart is a one-stop shop, taking care of online payments, fulfillment and shipping of orders, management of returns and refunds and customer service.</p>
+            <p>Buy Now offers local buyers a full selection of diverse products and services from local sellers, manufacturers, resellers and importers.</p>
+            <p>Buy Now is a one-stop shop, taking care of online payments, fulfillment and shipping of orders, management of returns and refunds and customer service.</p>
         </section>
 
         <section class="about-grid">
             <div class="about-image">
-                <img src="images/seller1.jpg" alt="RwandaMart service center">
+                <img src="images/seller1.jpg" alt="Buy Now service center">
             </div>
             <div class="about-copy">
                 <h3>Digital & Physical Tools for All</h3>
-                <p>All the RwandaMart Service Centre facilities are now available for booking by appointment.</p>
+                <p>All the Buy Now Service Centre facilities are now available for booking by appointment.</p>
                 <p>A participatory payment is required for each booking to ensure the sustainability and maintenance of the infrastructure.</p>
                 <p>It is where all the logistics are centralized, to reduce costs and enhance service levels for fulfillment and delivery for both sellers and logistics providers, bringing world-class service right to your home or business.</p>
-                <p>The RwandaMart Service Centre is also a Maker Lab, where you can find machines and tools available for hire to everyone from 3D printing to specialized packaging to distribution shipping to make your products and services online.</p>
+                <p>The Buy Now Service Centre is also a Maker Lab, where you can find machines and tools available for hire to everyone from 3D printing to specialized packaging to distribution shipping to make your products and services online.</p>
                 <p>You will have everything you need to take your business online at your fingertips.</p>
             </div>
         </section>
 
         <section class="about-details">
-            <p>The RwandaMart Service Centre is a dedicated space in KICITY HQ building where you can find the following infrastructure:</p>
+            <p>The Buy Now Service Centre is a dedicated space in KICITY HQ building where you can find the following infrastructure:</p>
             <ul>
                 <li>Business Center</li>
                 <li>Digitization Studio</li>
@@ -138,146 +121,106 @@
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="footer-subscribe">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-5">
-                        <div class="subscribe-content">
-                            <h6 class="entry-subtitle"></h6>
-                            <h3 class="entry-title">Join our newsletter and get updates on promotions and coupons.</h3>
-                            <div class="entry-teaser">
-                                <p>Be the first to access special offers, limited-time coupons, and member-only promotions.</p>
-                            </div>
-                            <div class="form-wrapper">
-                                [mc4wp_form id="635"]
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-7">
-                        <div class="subscribe-image"><img width="510" height="277" src="https://rwandamart.rw/wp-content/uploads/2021/04/coupon.png" alt="subscribe" class="entered lazyloaded"></div>
-                    </div>
+        <footer class="site-footer buy-now-footer">
+        <section class="footer-subscribe">
+            <div class="footer-container subscribe-row">
+                <div class="subscribe-content">
+                    <h2>Join our newsletter and get updates on promotions and coupons.</h2>
+                    <p>Be the first to access special offers, limited-time coupons, and member-only promotions.</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email address" aria-label="Newsletter email">
+                        <button type="button">Subscribe</button>
+                    </form>
+                </div>
+                <div class="coupon-card" aria-hidden="true">
+                    <span class="coupon-save">50%</span>
+                    <span class="coupon-label">discount</span>
+                    <span class="coupon-code">BUY-NOW</span>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="footer-iconboxes">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-12 col-md-6 col-lg-3">
-                        <div class="iconbox">
-                            <div class="iconbox-icon"><i class="klbth-icon-milk-box"></i></div>
-                            <div class="iconbox-detail">
-                                <span>Everyday fresh products</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-12 col-md-6 col-lg-3">
-                        <div class="iconbox">
-                            <div class="iconbox-icon"><i class="klbth-icon-delivery-truck-2"></i></div>
-                            <div class="iconbox-detail">
-                                <span>Free delivery for order over $70</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-12 col-md-6 col-lg-3">
-                        <div class="iconbox">
-                            <div class="iconbox-icon"><i class="klbth-icon-discount-outline"></i></div>
-                            <div class="iconbox-detail">
-                                <span>Daily Mega Discounts</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-12 col-md-6 col-lg-3">
-                        <div class="iconbox">
-                            <div class="iconbox-icon"><i class="klbth-icon-dollar"></i></div>
-                            <div class="iconbox-detail">
-                                <span>Best price on the market</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section class="footer-services">
+            <div class="footer-container services-row">
+                <div class="service-item"><span class="service-icon">+</span> Everyday fresh products</div>
+                <div class="service-item"><span class="service-icon">*</span> Free delivery for orders over 50,000 RWF</div>
+                <div class="service-item"><span class="service-icon">%</span> Daily Mega Discounts</div>
+                <div class="service-item"><span class="service-icon">=</span> Best price on the market</div>
             </div>
-        </div>
+        </section>
 
-        <div class="footer-widgets border-enable">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-12 col-lg-3 col-five">
-                        <div class="klbfooterwidget widget widget_nav_menu"><h4 class="widget-title">Get to Know Us</h4><div class="menu-footer-web-menu-container"><ul id="menu-footer-web-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2462"><a href="about.html">About RwandaMart</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2460"><a href="#">Contact Us</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2464"><a href="shop.html">Shop</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2461"><a href="#">Blog</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2550"><a href="#">Cookie Policy</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2551"><a href="#">Shipping &amp; Delivery Policy</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2552"><a href="#">Returns &amp; Refund Policy</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2553"><a href="#">Terms &amp; Conditions</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2554"><a rel="privacy-policy" href="#">Privacy Policy</a></li>
-</ul></div></div>
-                    </div>
-                    <div class="col col-12 col-lg-3 col-five">
-                        <div class="klbfooterwidget widget widget_nav_menu"><h4 class="widget-title">Grocery and Gourmet Food</h4></div>
-                    </div>
-                    <div class="col col-12 col-lg-3 col-five">
-                        <div class="klbfooterwidget widget widget_nav_menu"><h4 class="widget-title">Health and Household</h4></div>
-                    </div>
-                    <div class="col col-12 col-lg-3 col-five">
-                        <div class="klbfooterwidget widget widget_nav_menu"><h4 class="widget-title">Home and Kitchen</h4></div>
-                    </div>
-                    <div class="col col-12 col-lg-3 col-five">
-                        <div class="klbfooterwidget widget widget_nav_menu"><h4 class="widget-title">Fashion</h4></div>
-                    </div>
+        <section class="footer-links-area">
+            <div class="footer-container footer-columns">
+                <div class="footer-column">
+                    <h4>Get to Know Us</h4>
+                    <a href="about.html">About Buy Now</a>
+                    <a href="#">Contact Us</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Shipping &amp; Delivery Policy</a>
+                    <a href="#">Returns &amp; Refund Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Grocery and Gourmet Food</h4>
+                    <a href="grocery.html">Fresh groceries</a>
+                    <a href="grocery.html">Drinks</a>
+                    <a href="grocery.html">Bakery</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Health and Household</h4>
+                    <a href="household.html">Home essentials</a>
+                    <a href="household.html">Cleaning products</a>
+                    <a href="household.html">Personal care</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Home and Kitchen</h4>
+                    <a href="kitchen.html">Kitchen tools</a>
+                    <a href="kitchen.html">Storage</a>
+                    <a href="kitchen.html">Furniture</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Fashion</h4>
+                    <a href="shop.html">Accessories</a>
+                    <a href="shop.html">Clothes</a>
+                    <a href="shop.html">Shoes</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="footer-contacts">
-            <div class="container">
-                <div class="column column-left">
-                    <div class="site-phone">
-                        <div class="phone-icon"><i class="klbth-icon-phone-call"></i></div>
-                        <div class="phone-detail">
-                            <h4 class="entry-title">+250 79 194 5679</h4>
-                            <span>Monday - Friday: 9AM to 5PM</span>
-                        </div>
+        <section class="footer-contact-bar">
+            <div class="footer-container contact-row">
+                <div class="footer-phone">
+                    <span class="phone-circle">tel</span>
+                    <div>
+                        <strong>+250 79 194 5679</strong>
+                        <span>Monday - Friday: 9AM to 5PM</span>
                     </div>
                 </div>
-                <div class="column column-right">
-                    <div class="site-mobile-app">
-                        <div class="app-content">
-                            <h6 class="entry-title">rwandamart@i-posita.rw</h6>
-                            <span>KN 4 St, IPOSITA Building, Kigali</span>
-                        </div>
-                        <div class="app-buttons">
-                            <a href="#" class="google-play">
-                                <img width="1024" height="1024" src="https://rwandamart.rw/wp-content/uploads/2025/12/ChatGPT-Image-Dec-6-2025-01_42_58-PM.png" alt="app" class="entered lazyloaded">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="site-social">
-                        <ul>
-                            <li><a href="https://www.facebook.com/" target="_blank"><i class="klbth-icon-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/" target="_blank"><i class="klbth-icon-twitter"></i></a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank"><i class="klbth-icon-instagram"></i></a></li>
-                        </ul>
-                    </div>
+                <div class="footer-brand-block">
+                    <strong>buy-now@i-posita.rw</strong>
+                    <span>KN 4 St, IPOSITA Building, Kigali</span>
+                </div>
+                <div class="footer-socials" aria-label="Social links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Twitter">x</a>
+                    <a href="#" aria-label="Instagram">i</a>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom border-enable">
-            <div class="container">
-                <div class="site-copyright">
-                    <p>Copyright 2025 © RwandaMart. All Rights Reserved</p>
+        </section>
+
+        <section class="footer-bottom-line">
+            <div class="footer-container bottom-row">
+                <p>Copyright 2026 &copy; Buy Now. All Rights Reserved</p>
+                <div class="footer-policy-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Cookie</a>
                 </div>
-                <nav class="site-menu footer-menu">
-                    <ul id="menu-footer-menu" class="menu"><li id="menu-item-1889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1889"><a href="#">Privacy Policy</a></li>
-<li id="menu-item-1843" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1843"><a href="#">Terms &amp; Conditions</a></li>
-<li id="menu-item-1844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1844"><a href="#">Cookie</a></li>
-</ul>
-                </nav>
-                <div class="site-payments"><a href="#"><img width="320" height="28" src="https://rwandamart.rw/wp-content/uploads/2021/04/payments.jpg" alt="payment" class="entered lazyloaded"></a></div>
             </div>
-        </div>
+        </section>
     </footer>
 
     <script src="header.js"></script>

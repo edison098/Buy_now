@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<head>    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CUSTOMERCARE</title>
     <link rel="stylesheet" href="home-style1.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
 <nav class="top-bar">
   Shop from over 3,000 products across Groceries, Fashion, Home Décor, Health & Beauty and more, with free shipping on orders above <strong>RWF 50,000!</strong>
 </nav>
+
     <!-- Top Header -->
     <div class="top-header">
         <div class="left-links">
@@ -44,7 +45,7 @@
 
         <div class="main-header">
             <h1 class="logo">🛒<span>NOW</span></h1>
-            <input type="text" placeholder="Search for products...">
+            <input class="search-input" type="search" placeholder="Search for products...">
             <div class="header-buttons">
                 <div class="header-login button-item bordered">
                     <a href="register.html" aria-label="My account">
@@ -68,7 +69,7 @@
 
     <!-- NAVBAR -->
     <nav>
-        <button id="menubtn"   class="menu-btn">☰ ALL CATEGORIES</button>
+        <button id="menubtn"   class="menu-btn">☰ ALL CATEGORIES  </button>
         <ul class="menu-btn-nave" >
             <li><a href="index.html">HOME</a></li>
             <li><a href="sellers.html">SELLERS</a></li>
@@ -105,7 +106,7 @@
                 <div class="hero-price">Each only <strong>26k IDR</strong></div>
                 <div class="hero-actions">
                     <button class="hero-primary" id="heroShop">Shop Now →</button>
-                    <button class="hero-secondary" id="heroDetails">Learn More</button>
+                   
                 </div>
                 <div class="hero-dots" id="heroDots"></div>
             </div>
@@ -114,262 +115,344 @@
             </div>
         </div>
     </main>
-    <!-- PRODUCTS SECTION -->
-<section class="products">
+    <section class="home-shop-section home-best-sellers" id="home-products">
+        <aside class="home-feature-card">
+            <span>Essential Store Deals</span>
+            <h2>Skai Chilli Sauce</h2>
+            <p class="price">1,500 RWF</p>
+            <button type="button" class="feature-shop-btn">Shop Now</button>
+            <img src="images/tomato2.jpg" alt="Skai chilli sauce">
+        </aside>
 
-    <!-- LEFT BIG PRODUCT -->
-    <div class="product-highlight">
-    
-        <h2>TOMATO</h2>
-        <p class="price">1,500 RWF</p>
-        <img src="images/tomato2.jpg" alt="chilli">
-    </div>
+        <div class="home-product-area">
+            <div class="home-section-header">
+                <div>
+                    <h2>Best Sellers</h2>
+                    <p>Do not miss the current offers until this week.</p>
+                </div>
+                <a href="shop.html">All Best Sellers</a>
+            </div>
 
-    <!-- RIGHT GRID PRODUCTS -->
-    <div class="product-grid">
-
-        <div class="card">
-            <img src="images/honey2.jpg">
-            <h3>honey</h3>
-            <p>4500 RWF</p>
-            <button>Add</button>
-        </div>
-
-        <div class="card">
-            <img src="images/cars2.jpg">
-            <h3>Cars products</h3>
-            <p>10000 RWF</p>
-            <button>Add</button>
-        </div>
-
-        <div class="card">
-            <img src="images/game-controller.jpg">
-            <h3>Game controller</h3>
-            <p>50,000 RWF</p>
-            <button>Add</button>
-        </div>
-
-        <div class="card">
-            <img src="images/soap1.jpg">
-            <h3>Africa soap</h3>
-            <p>30,000 RWF</p>
-            <button>Add</button>
-        </div>
-
-    </div>
-</section>
-<section class="products">
-
-    <!-- LEFT BIG PRODUCT -->
-    <div class="product-highlight">
-        <h4>see here</h4>
-        <h2>Black soap</h2>
-        <p class="price">5000 RWF</p>
-        <img src="images/vale-parfium1.jpg" alt="chilli">
-    </div>
-
-    <div class="product-grid">
-
-        <div class="card">
-            <img src="images/bycles1.jpg">
-            <h3>some product</h3>
-            <p>3000 RWF</p>
-            <button>Add</button>
-        </div>
-
-        <div class="card">
-            <img src="images/orange5.jpg">
-            <h3>Oranges</h3>
-            <p>200 RWF</p>
-            <button>Add</button>
-        </div>
-
-        <div class="card">
-            <img src="images/charger1.jpg">
-            <h3>charger</h3>
-            <p>5000 RWF</p>
-            <button>Add</button>
+            <div class="home-product-grid">
+                <article class="product-card home-product-card">
+                    <img src="images/ports1.jpg" alt="Portable black speaker">
+                    <span class="stock">In Stock</span>
+                    <h3>Portable Black Speaker</h3>
+                    <p class="price">30,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/usb1.jpg" alt="Outdoor WiFi camera">
+                    <span class="stock">In Stock</span>
+                    <h3>Solar WiFi Outdoor Camera</h3>
+                    <p class="price">72,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/tomato1.jpg" alt="Skai hot chilli sauce">
+                    <span class="stock">In Stock</span>
+                    <h3>Skai Hot Chilli Sauce</h3>
+                    <p class="price">1,500 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/wares1.jpg" alt="Woven table collection">
+                    <span class="stock">In Stock</span>
+                    <h3>Woven Table Collection</h3>
+                    <p class="price">20,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/honey3.jpg" alt="Beetino nutritious drink">
+                    <span class="stock">In Stock</span>
+                    <h3>Beetino Nutritious Drink</h3>
+                    <p class="price">12,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/bycles1.jpg" alt="Organic loofah">
+                    <span class="stock">In Stock</span>
+                    <h3>Organic Loofah</h3>
+                    <p class="price">3,500 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/coffee1.jpg" alt="Rugali coffee">
+                    <span class="stock">In Stock</span>
+                    <h3>Rugali Easyway Coffee</h3>
+                    <p class="price">10,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/soap1.jpg" alt="African black soap">
+                    <span class="stock">In Stock</span>
+                    <h3>African Black Soap</h3>
+                    <p class="price">5,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+            </div>
         </div>
     </section>
 
-    <!-- NEW PRODUCTS (FROM IMAGE) -->
-<section class="top-products">
+    <section class="home-shop-section home-new-products">
+        <aside class="home-feature-card">
+            <span>Best Beauty Products</span>
+            <h2>Pure Avocado Oil</h2>
+            <p class="price">1,500 RWF</p>
+            <button type="button" class="feature-shop-btn">Shop Now</button>
+            <img src="images/oil1.jpg" alt="Pure avocado oil">
+            <div class="feature-notes">
+                <p>Fast delivery to your address.</p>
+                <p>Safe checkout with local payments.</p>
+                <p>Fresh offers updated every week.</p>
+            </div>
+        </aside>
 
-    <div class="top-card">
-        <img src="images/charger1.jpg">
-        <p>Best charger</p>
-        <span>2,000 RWF</span>
-    </div>
+        <div class="home-product-area">
+            <div class="home-section-header">
+                <div>
+                    <h2>New Products</h2>
+                    <p>New products with updated deals.</p>
+                </div>
+                <a href="shop.html">All New Products</a>
+            </div>
 
-    <div class="top-card">
-        <img src="images/game-controller.jpg">
-        <p>Game Controller</p>
-        <span>50,000 RWF</span>
-    </div>
+            <div class="home-product-grid">
+                <article class="product-card home-product-card">
+                    <img src="images/wares1.jpg" alt="Outdoor camping chair">
+                    <span class="stock">In Stock</span>
+                    <h3>Outdoor Camping Chair</h3>
+                    <p class="price">18,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/Poster design.jpg" alt="Camping tent">
+                    <span class="stock">In Stock</span>
+                    <h3>Eco Camping Tent</h3>
+                    <p class="price">250,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/pine1.jpg" alt="Family camping tent">
+                    <span class="stock">In Stock</span>
+                    <h3>Family Camping Tent</h3>
+                    <p class="price">300,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/product1.jpg" alt="Yoga brick">
+                    <span class="stock">In Stock</span>
+                    <h3>Yoga Brick</h3>
+                    <p class="price">15,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/ball-bearing.jpg" alt="Slam ball">
+                    <span class="stock">In Stock</span>
+                    <h3>Slam Ball 15kg</h3>
+                    <p class="price">30,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/cars1.jpg" alt="Knee sleeves">
+                    <span class="stock">In Stock</span>
+                    <h3>Knee Sleeves</h3>
+                    <p class="price">50,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/cars-oil.jpg" alt="Outdoor exercise gloves">
+                    <span class="stock">In Stock</span>
+                    <h3>Outdoor Exercise Gloves</h3>
+                    <p class="price">20,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+                <article class="product-card home-product-card">
+                    <img src="images/headphone1.jpg" alt="Wireless headset">
+                    <span class="stock">In Stock</span>
+                    <h3>Wireless Headset</h3>
+                    <p class="price">22,000 RWF</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+            </div>
+        </div>
+    </section>
 
-    <div class="top-card">
-        <img src="images/product1.jpg">
-        <p>Best here product</p>
-        <span>40,000 RWF</span>
-    </div>
-
-    <div class="top-card">
-        <img src="images/ball-bearing.jpg">
-        <p>Ball Bearing</p>
-        <span>27,000 RWF</span>
-    </div>
-
-</section>
-
-
-<!-- PROMO SECTION -->
-<section class="promo">
-
-    <div class="promo-card green">
-        
-        <h4>NATURAL OIL</h4>
-        <h2>See the some products</h2>
-        <button>Shop Now</button>
-    </div>
-
-    <div class="promo-card gray">
-        <h4>WEEKEND DISCOUNT 10%</h4>
-        <h2>Different products</h2>
-        <button>Shop Now</button>
-    </div>
-
-    <div class="promo-card green">
-        
-        <h4>WEEKEND DISCOUNT 10%</h4>
-        <h2>CAR OILS</h2>
-        <button>Shop Now</button>
-        
-    </div>
-
-</section>
-<!-- SHOP BY CATEGORY -->
-<section class="shop-category">
-
-    <div class="category-header">
-        <h2>SHOP BY CATEGORY</h2>
-        <button class="shop-all-btn">Shop All →</button>
-    </div>
-
-    <div class="category-container">
-
-        <!-- LEFT BIG ICON -->
-        <div class="category-left">
-            <div class="big-icon">🏠🔧</div>
-            <h3>Tools for home</h3>
-            <p>29 Items</p>
+    <section class="home-shop-section home-featured-deals">
+        <div class="home-section-header">
+            <div>
+                <h2>Featured Deals</h2>
+                <p>Selected products from Buy Now sellers.</p>
+            </div>
+            <a href="shop.html">All Products</a>
         </div>
 
-        <!-- RIGHT GRID -->
-        <div class="category-grid">
-
-            <div class="cat-item">💸 Special Deals <span>32 Items</span></div>
-            <div class="cat-item">🛠 Services <span>56 Items</span></div>
-            <div class="cat-item">🪑 Office Products <span>67 Items</span></div>
-            <div class="cat-item">🍳 Home and Kitchen <span>366 Items</span></div>
-
-            <div class="cat-item">🧴 Health & Household <span>172 Items</span></div>
-            <div class="cat-item">🛒 Grocery <span>397 Items</span></div>
-            <div class="cat-item">🎁 Gifts <span>169 Items</span></div>
-            <div class="cat-item">🥬 Fresh Vegetables <span>11 Items</span></div>
-
-            <div class="cat-item">🍔 Food <span>1 Item</span></div>
-            <div class="cat-item">📱 Electronics <span>376 Items</span></div>
-            <div class="cat-item">👗 Fashion <span>224 Items</span></div>
-            <div class="cat-item">☕ Breakfast <span>78 Items</span></div>
-
-            <div class="cat-item">🥤 Beverages <span>13 Items</span></div>
-            <div class="cat-item">🍼 Baby Products <span>55 Items</span></div>
-            <div class="cat-item">🎨 Arts <span>98 Items</span></div>
-            <div class="cat-item">📦 All Categories <span>97 Items</span></div>
-
+        <div class="home-product-grid wide">
+            <article class="product-card home-product-card">
+                <img src="images/seller1.jpg" alt="Fashion vest">
+                <span class="stock">In Stock</span>
+                <h3>Fashion Vest</h3>
+                <p class="price">30,000 RWF</p>
+                <button type="button">Add to Cart</button>
+            </article>
+            <article class="product-card home-product-card">
+                <img src="images/oil2.jpg" alt="Eucalyptus essential oil">
+                <span class="stock">In Stock</span>
+                <h3>Eucalyptus Essential Oil</h3>
+                <p class="price">15,000 RWF</p>
+                <button type="button">Add to Cart</button>
+            </article>
+            <article class="product-card home-product-card">
+                <img src="images/honey1.jpg" alt="Aux Delices honey">
+                <span class="stock">In Stock</span>
+                <h3>Aux Delices Honey</h3>
+                <p class="price">6,500 RWF</p>
+                <button type="button">Add to Cart</button>
+            </article>
+            <article class="product-card home-product-card">
+                <img src="images/soap1.jpg" alt="Rosemary soap">
+                <span class="stock">In Stock</span>
+                <h3>Rosemary Soap</h3>
+                <p class="price">2,500 RWF</p>
+                <button type="button">Add to Cart</button>
+            </article>
+            <article class="product-card home-product-card">
+                <img src="images/coffee2.jpg" alt="Activated green clay">
+                <span class="stock">In Stock</span>
+                <h3>Activated Green Clay</h3>
+                <p class="price">8,000 RWF</p>
+                <button type="button">Add to Cart</button>
+            </article>
+            <article class="product-card home-product-card">
+                <img src="images/honey11.jpg" alt="Natural flour pack">
+                <span class="stock">In Stock</span>
+                <h3>Natural Flour Pack</h3>
+                <p class="price">3,000 RWF</p>
+                <button type="button">Add to Cart</button>
+            </article>
+            <article class="product-card home-product-card">
+                <img src="images/honey2.jpg" alt="Tropical honey">
+                <span class="stock">In Stock</span>
+                <h3>Tropical Honey</h3>
+                <p class="price">7,000 RWF</p>
+                <button type="button">Add to Cart</button>
+            </article>
+            <article class="product-card home-product-card">
+                <img src="images/bycles1.jpg" alt="Woven baskets">
+                <span class="stock">In Stock</span>
+                <h3>Woven Baskets</h3>
+                <p class="price">25,000 RWF</p>
+                <button type="button">Add to Cart</button>
+            </article>
         </div>
-    </div>
-
-</section>
-
+    </section>
 
 <!-- FOOTER -->
-<footer class="footer">
+    <footer class="site-footer buy-now-footer">
+        <section class="footer-subscribe">
+            <div class="footer-container subscribe-row">
+                <div class="subscribe-content">
+                    <h2>Join our newsletter and get updates on promotions and coupons.</h2>
+                    <p>Be the first to access special offers, limited-time coupons, and member-only promotions.</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email address" aria-label="Newsletter email">
+                        <button type="button">Subscribe</button>
+                    </form>
+                </div>
+                <div class="coupon-card" aria-hidden="true">
+                    <span class="coupon-save">50%</span>
+                    <span class="coupon-label">discount</span>
+                    <span class="coupon-code">BUY-NOW</span>
+                </div>
+            </div>
+        </section>
 
-    <!-- NEWSLETTER -->
-    <div class="newsletter">
-        <div class="newsletter-text">
-            <h2>Join our newsletter and get updates on promotions and coupons.</h2>
-            <p>Be the first to access special offers, limited-time coupons, and member-only promotions.</p>
-        </div>
+        <section class="footer-services">
+            <div class="footer-container services-row">
+                <div class="service-item"><span class="service-icon">+</span> Everyday fresh products</div>
+                <div class="service-item"><span class="service-icon">*</span> Free delivery for orders over 50,000 RWF</div>
+                <div class="service-item"><span class="service-icon">%</span> Daily Mega Discounts</div>
+                <div class="service-item"><span class="service-icon">=</span> Best price on the market</div>
+            </div>
+        </section>
 
-        <div class="newsletter-form">
-            <input type="email" placeholder="Enter your email">
-            <button onclick="subscribe()">Subscribe</button>
-        </div>
-    </div>
+        <section class="footer-links-area">
+            <div class="footer-container footer-columns">
+                <div class="footer-column">
+                    <h4>Get to Know Us</h4>
+                    <a href="about.html">About Buy Now</a>
+                    <a href="#">Contact Us</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Shipping &amp; Delivery Policy</a>
+                    <a href="#">Returns &amp; Refund Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Grocery and Gourmet Food</h4>
+                    <a href="grocery.html">Fresh groceries</a>
+                    <a href="grocery.html">Drinks</a>
+                    <a href="grocery.html">Bakery</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Health and Household</h4>
+                    <a href="household.html">Home essentials</a>
+                    <a href="household.html">Cleaning products</a>
+                    <a href="household.html">Personal care</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Home and Kitchen</h4>
+                    <a href="kitchen.html">Kitchen tools</a>
+                    <a href="kitchen.html">Storage</a>
+                    <a href="kitchen.html">Furniture</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Fashion</h4>
+                    <a href="shop.html">Accessories</a>
+                    <a href="shop.html">Clothes</a>
+                    <a href="shop.html">Shoes</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- FEATURES -->
-    <div class="features">
-        <div>📌 Everyday fresh products</div>
-        <div>🚚 Free delivery for order over $70</div>
-        <div>💰 Daily Mega Discounts</div>
-        <div>🏆 Best price on the market</div>
-    </div>
+        <section class="footer-contact-bar">
+            <div class="footer-container contact-row">
+                <div class="footer-phone">
+                    <span class="phone-circle">tel</span>
+                    <div>
+                        <strong>+250 79 194 5679</strong>
+                        <span>Monday - Friday: 9AM to 5PM</span>
+                    </div>
+                </div>
+                <div class="footer-brand-block">
+                    <strong>buy-now@i-posita.rw</strong>
+                    <span>KN 4 St, IPOSITA Building, Kigali</span>
+                </div>
+                <div class="footer-socials" aria-label="Social links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Twitter">x</a>
+                    <a href="#" aria-label="Instagram">i</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- LINKS -->
-    <div class="footer-links">
-
-        <div>
-            <h4>GET TO KNOW US</h4>
-            <p>About</p>
-            <p>Contact Us</p>
-            <p>Shop</p>
-            <p>Blog</p>
-        </div>
-
-        <div>
-            <h4>GROCERY AND FOOD</h4>
-            <p>Fruits</p>
-            <p>Vegetables</p>
-            <p>Drinks</p>
-        </div>
-
-        <div>
-            <h4>HEALTH & HOUSEHOLD</h4>
-            <p>Soap</p>
-            <p>Medicine</p>
-        </div>
-
-        <div>
-            <h4>HOME & KITCHEN</h4>
-            <p>Utensils</p>
-            <p>Storage</p>
-        </div>
-
-        <div>
-            <h4>FASHION</h4>
-            <p>Clothes</p>
-            <p>Shoes</p>
-        </div>
-
-    </div>
-
-    <!-- BOTTOM -->
-    <div class="footer-bottom">
-        <div class="contact">
-            📞 +250 79
-        </div>
-
-        <div class="copyright">
-            © 2025 🛒NOW. All Rights Reserved
-        </div>
-    </div>
-
-</footer>
+        <section class="footer-bottom-line">
+            <div class="footer-container bottom-row">
+                <p>Copyright 2026 &copy; Buy Now. All Rights Reserved</p>
+                <div class="footer-policy-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Cookie</a>
+                </div>
+            </div>
+        </section>
+    </footer>
   
 
     <script src="js1.js"></script>
+    <script src="header.js"></script>
     <script>
         const menuBtn = document.getElementById('menubtn');
         const sidebar = document.getElementById('sidebar');
@@ -442,50 +525,6 @@
         }
 
         initHeroSlider();
-
-        // Cart functionality
-        function addToCart(productName, price, imageSrc) {
-            // Get existing cart from localStorage
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            
-            // Check if product already exists
-            const existingProduct = cart.find(item => item.name === productName);
-            
-            if (existingProduct) {
-                existingProduct.quantity += 1;
-            } else {
-                // Add new product
-                cart.push({
-                    name: productName,
-                    price: parseInt(price.replace(/[^\d]/g, '')), // Extract number from price string
-                    image: imageSrc,
-                    quantity: 1
-                });
-            }
-            
-            // Save to localStorage
-            localStorage.setItem('cart', JSON.stringify(cart));
-            
-            // Redirect to cart page
-            window.location.href = 'empty-cart.html';
-        }
-
-        // Add click handlers to all Add buttons
-        document.addEventListener('DOMContentLoaded', function() {
-            // Handle card buttons
-            document.querySelectorAll('.card').forEach((card, index) => {
-                const button = card.querySelector('button');
-                const img = card.querySelector('img');
-                const title = card.querySelector('h3');
-                const price = card.querySelector('p');
-                
-                if (button && img && title && price) {
-                    button.onclick = function() {
-                        addToCart(title.textContent, price.textContent, img.src);
-                    };
-                }
-            });
-        });
     </script>
 </body>
 </html>

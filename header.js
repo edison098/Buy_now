@@ -32,26 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const card = button.closest('.card, .product-card');
             if (!card) return;
-            const title = card.querySelector('h3')?.textContent || card.querySelector('h2')?.textContent || 'Product';
-            const priceText = card.querySelector('.price')?.textContent || card.querySelector('p')?.textContent || '0';
+            const title = card.querySelector('h3, h2')?.textContent?.trim() || 'Product';
+            const priceText = card.querySelector('.price, p')?.textContent?.trim() || '0';
             const img = card.querySelector('img')?.src || '';
+
+            button.classList.add('active');
+            card.classList.add('active');
             addToCart(title, priceText, img);
         });
     });
 
-    document.querySelectorAll('.shop-banner button, .hero-primary, .hero-secondary, #shopBannerBtn, #buyHero').forEach(btn => {
-        btn.addEventListener('click', () => {
-            goToProducts();
-        });
-    });
-
-    document.querySelectorAll('.promo-card button').forEach(btn => {
-        btn.addEventListener('click', () => {
-            window.location.href = 'shop.html';
-        });
-    });
-
-    document.querySelectorAll('.shop-all-btn').forEach(btn => {
+    document.querySelectorAll('.promo-card button, .shop-all-btn, .feature-shop-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             window.location.href = 'shop.html';
         });
@@ -59,17 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.cat-item').forEach(item => {
         item.addEventListener('click', () => {
-            const name = item.innerText.replace(/\s*\d+\s*Items?$/i, '').trim();
+            const name = item.textContent.replace(/\s*\d+\s*Items?$/i, '').trim();
             if (name) {
                 alert('Opening category: ' + name);
             }
-        });
-    });
-
-    document.querySelectorAll('.cat-item').forEach(item => {
-        item.addEventListener('click', () => {
-            const name = item.innerText.replace(/\s+\d+ Items$/, '');
-            alert('Opening category: ' + name);
         });
     });
 
@@ -80,17 +64,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const buyHero = document.getElementById('buyHero');
     if (buyHero) {
-        buyHero.addEventListener('click', () => {
-            alert('Product added to cart!');
-            addToCart('Hero Product', '3000', '');
-        });
+        buyHero.addEventListener('click', goToProducts);
     }
 
-    const newsletterButton = document.querySelector('.newsletter-form button');
-    if (newsletterButton) {
-        newsletterButton.addEventListener('click', subscribe);
-    }
+    updateCartSummary();
 });
+
+function getCart() {
+    return JSON.parse(localStorage.getItem('cart') || '[]');
+}
+
+function saveCart(cart) {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function updateCartSummary() {
+    const cart = getCart();
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+    document.querySelectorAll('.cart-price').forEach(el => {
+        el.textContent = total.toLocaleString() + ' RWF';
+    });
+
+    document.querySelectorAll('.cart-count-icon').forEach(el => {
+        el.textContent = count;
+    });
+}
 
 function goToProducts() {
     window.location.href = 'shop.html';
@@ -108,7 +108,7 @@ function subscribe() {
 }
 
 function addToCart(productName, price, imageSrc) {
-    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+    const cart = getCart();
     const priceValue = typeof price === 'string' ? parseInt(price.replace(/[^\d]/g, ''), 10) || 0 : Number(price) || 0;
     const existing = cart.find(item => item.name === productName);
 
@@ -123,6 +123,9 @@ function addToCart(productName, price, imageSrc) {
         });
     }
 
-    localStorage.setItem('cart', JSON.stringify(cart));
-    window.location.href = 'empty-cart.html';
+    saveCart(cart);
+    updateCartSummary();
+    setTimeout(() => {
+        window.location.href = 'empty-cart.html';
+    }, 150);
 }
